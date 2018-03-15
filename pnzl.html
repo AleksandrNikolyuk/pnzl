@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title> pnzl slider</title>
+  <link href="css/pnzl.css" rel="stylesheet">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .langChange{
+            display: flex;
+        }
+        .langChange__button{
+            width: 150px;
+            height: 30px;
+            box-sizing: border-box;
+            padding: 5px 20px;
+            background: #eee;
+        }
+        .langChange__button:hover{
+            background: #ffcc00;
+        }
+    </style>
+
+    <header class="langChange" id="langChanger">
+        <button class="langChange__button" data-lang="ua">UA</button>
+        <button class="langChange__button" data-lang="ru">RU</button>
+        <button class="langChange__button" data-lang="fr">FR</button>
+    </header>
+
+  <section class="carusel">
+  <div class="carusel__case" id="caseRender">
+    <div class="carusel__selectedItem">
+      <div class="carusel__selectedItemThumb">
+        <img src="http://pnzl.eu/storage/uploads/common/2017/12/peeters-f-p.jpg" />
+      </div>
+      <div class="carusel__selectedItemData">
+        <header class="carusel__selectedItemHeader">
+          <h3 class="carusel__selectedItemTitle">Snacktion</h3>
+          <div class="carusel__selectedItemCategory latest">Новинки</div>
+        </header>
+        <div class="carusel__selectedItemDescription">
+          Magna consequat pariatur amet sint amet nulla ipsum. Occaecat incididunt enim nisi nulla reprehenderit aliqua veniam id exercitation officia sit ipsum. Eiusmod eiusmod magna ullamco cupidatat ea
+        </div>
+        <div class="carusel__selectedItemAuthorContainer">
+                <div class="carusel__selectedItemAuthor">
+                  <div class="carusel__selectedItemAuthorType">
+                    Автор:
+                  </div>
+                  <a href="#" class="carusel__selectedItemAuthorValue">
+                    Summer Gilbert
+                  </a>
+                </div>
+
+                <div class="carusel__selectedItemAuthor">
+                  <div class="carusel__selectedItemAuthorType">
+                    Іллюстратор:
+                  </div>
+                  <a href="#" class="carusel__selectedItemAuthorValue">
+                    Pollard Chandler
+                  </a>
+                </div>
+
+                <div class="carusel__selectedItemAuthor">
+                  <div class="carusel__selectedItemAuthorType">
+                    Перекладач:
+                  </div>
+                  <a href="#" class="carusel__selectedItemAuthorValue">
+                    Cathy Castaneda
+                  </a>
+                </div>
+
+        </div>
+
+        <div class="carusel__selectedItemPrice">
+          200 грн
+        </div>
+
+      </div>
+    </div>
+  </div> <!-- carusel case -->
+
+  <div class="carusel__navigation">
+    <div class="carusel__navigationArrow Prev"></div>
+
+    <div class="carusel__data" id="indexCarusel">
+      <div class="carusel__dataItem" id="index"></div>
+      <div class="carusel__dataItem" id="index"></div>
+      <div class="carusel__dataItem" id="index"></div>
+      <div class="carusel__dataItem" id="index"></div>
+      <div class="carusel__dataItem" id="index"></div>
+    </div>
+
+    <div class="carusel__navigationArrow Next"></div>
+  </div>
+
+</section>
+
+<script src="pnzl.js"></script>
+
+</body>
+</html>
